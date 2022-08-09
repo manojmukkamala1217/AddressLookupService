@@ -7,23 +7,19 @@ namespace AddressLookupService.Gateway.Api.Services
 {
 	public class AddressResolveService : IAddressResolveService
 	{
-        private readonly ApiServiceOptions _apiOptions;
         private readonly ILogger<AddressResolveService> _logger;
-        private readonly IValdiateAddress _validateAddress;
         private readonly IPingLookupService _pingLookupService;
         private readonly IRdapLookupService _rdapLookupService;
         private readonly IRdnsLookupService _rdnsLookupService;
         private readonly IGeoIpLookupService _geoipLookupService;
 
-        public AddressResolveService(ApiServiceOptions apiOptions, ILogger<AddressResolveService> logger, IValdiateAddress validateAddress, 
+        public AddressResolveService(ILogger<AddressResolveService> logger, 
             IPingLookupService pingLookupService,
             IRdapLookupService rdapLookupService,
             IRdnsLookupService rdnsLookupService,
             IGeoIpLookupService geoipLookupService)
 		{
-			_apiOptions = apiOptions;
 			_logger = logger;
-			_validateAddress = validateAddress;
 			_pingLookupService = pingLookupService;
             _rdapLookupService = rdapLookupService;
             _rdnsLookupService = rdnsLookupService;

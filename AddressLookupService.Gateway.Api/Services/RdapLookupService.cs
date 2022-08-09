@@ -1,5 +1,4 @@
-﻿using AddressLookupService.Gateway.Api.Contracts;
-using AddressLookupService.Gateway.Api.Domain;
+﻿using AddressLookupService.Gateway.Api.Domain;
 using Api.Library.Contracts;
 using Api.Library.Models;
 using Api.Library.Services;
