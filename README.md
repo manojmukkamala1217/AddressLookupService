@@ -20,10 +20,16 @@ docker-compose up --build
 ``` 
 ![image](https://user-images.githubusercontent.com/109143438/183299624-ef60e401-54f7-472d-9186-094c3463ea3d.png)
 
+Access Gateway API i.e. running in Docker using
 
-# Step 2 Run AddressLookupService.Gateway.Api 
+http://localhost:5600/swagger/index.html
 
-Since this gatway API is not included in docker compose, it should be run separatly either from command prompt and VS 2022
+![image](https://user-images.githubusercontent.com/109143438/183641317-aa11047f-622a-4b68-a4c0-c812f604156d.png)
+
+
+# Step 2 Run AddressLookupService.Gateway.Api locally
+
+To run it locally it should be run separatly either from command prompt and VS 2022
 
 ```Open Command Prompt as administrator 
 cd <project root dir>
