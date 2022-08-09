@@ -18,7 +18,8 @@ cd <project root dir>
 docker-compose up --build
 
 ``` 
-![image](https://user-images.githubusercontent.com/109143438/183299624-ef60e401-54f7-472d-9186-094c3463ea3d.png)
+![image](https://user-images.githubusercontent.com/109143438/183641514-b63d2dc3-0df7-4fd2-85bd-3381565fea75.png)
+
 
 Access Gateway API i.e. running in Docker using
 
