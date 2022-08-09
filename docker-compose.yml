@@ -1,0 +1,37 @@
+version: '3.3'
+
+services:
+  servicelookup-gateway-api:
+    build:
+      context: ./
+      dockerfile: AddressLookupService.Gateway.Api/Dockerfile
+    ports:
+     - "5600:80"
+     
+  rdap-api:
+    build:
+      context: ./
+      dockerfile: AddressLookupService.Rdap.Api/Dockerfile
+    ports:
+     - "5500:80"
+     
+  geoip-api:
+    build:
+      context: ./
+      dockerfile: AddressLookupService.GeoIp.Api/Dockerfile
+    ports:
+     - "5501:80"
+     
+  rdns-api:
+    build:
+      context: ./
+      dockerfile: AddressLookupService.Rdns.Api/Dockerfile
+    ports:
+     - "5502:80"
+     
+  ping-api:
+    build:
+      context: ./
+      dockerfile: AddressLookupService.Ping.Api/Dockerfile
+    ports:
+     - "5503:80"

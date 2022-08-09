@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+  
+  servicelookup-gateway-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5600:80"
